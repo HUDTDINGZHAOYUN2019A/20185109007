@@ -91,7 +91,7 @@ data_all.drop(drop_col,axis=1,inplace=True)
 print('data_all.shape=',data_all.shape)
 ```
 
-* 对每一列特征最大最小归一化(https://blog.csdn.net/Gamer_gyt/article/details/77761884)
+* [对每一列特征最大最小归一化](https://blog.csdn.net/Gamer_gyt/article/details/77761884)
 
 ```
 """归一化"""
@@ -116,6 +116,8 @@ print('data_all[scale_cols].shape=',data_all[scale_cols].shape)
 数据进行训练后生成[模型](https://github.com/HUDTDINGZHAOYUN2019A/20185109007-1/blob/master/src/forest_model.pkl)
 
 利用该模型进行预测的结果代码为[predict.py](https://github.com/HUDTDINGZHAOYUN2019A/20185109007-1/tree/master/src/predict.py)。
+
+运行时，先执行train.py得到模型，再运行predict.py进行预测，最终得到结果文件。
 
 最终预测结果：[result.txt](https://github.com/HUDTDINGZHAOYUN2019A/20185109007-1/tree/master/src/result.txt)。
 
